@@ -14,7 +14,7 @@ class CustomException(Exception):
     ## A static method is essentially a function that logically belongs to a class but does not need 	## access to any instance-specific data. It doesn't use the self variable.
     def getDetailedErrorMessage(errorMessage, errorDetail : sys):
         
-        _, _, exceptionTraceback = errorDetail.exc_info()
+        _, _, exceptionTraceback = traceback.sys.exc_info()
         fileName = exceptionTraceback.tb_frame.f_code.co_filename
         lineNumber = exceptionTraceback.tb_lineno
 
